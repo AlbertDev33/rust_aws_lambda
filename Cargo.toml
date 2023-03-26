@@ -1,0 +1,11 @@
+[package]
+name = "aws_lambda_pizza_api"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+lambda_http = "0.7.0" #AWS Lambda Runtime
+tokio = "1.21.2" #for async networking
+serde = "1.0.147" #for JSON parse
