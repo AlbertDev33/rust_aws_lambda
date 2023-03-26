@@ -8,11 +8,11 @@ package:
   exclude:
     - ./**
   include:
-    - ./target/x86_64-unknown-linux-gnu/release/aws_lambda_pizza_api
+    - ./bootstrap
 
 functions:
   pizza_rust:
-    handler: target
+    handler: bootstrap
     events:
       - http:
           path: /pizza/{pizza_name}/price
